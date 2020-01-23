@@ -14,6 +14,7 @@ def handle(msg):
     chat_id = msg['chat']['id']
     bot.sendMessage(chat_id, lines)
 
+bot = pot.Bot('<bot id>')
 pot.loop.MessageLoop(bot, handle).run_as_thread()
 
 i = 0
